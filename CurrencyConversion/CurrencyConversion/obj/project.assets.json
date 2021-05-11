@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CurrencyConvertor.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/CurrencyConvertor.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CurrencyConvertor.Logic.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CurrencyConvertor.Logic/1.0.0": {
+      "type": "project",
+      "path": "../CurrencyConvertor.Logic/CurrencyConvertor.Logic.csproj",
+      "msbuildProject": "../CurrencyConvertor.Logic/CurrencyConvertor.Logic.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CurrencyConvertor.Logic >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\brbrown\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\brbrown\\source\\repos\\CurrencyConversion\\CurrencyConvertor.Logic\\CurrencyConvertor.Logic.csproj": {
+              "projectPath": "C:\\Users\\brbrown\\source\\repos\\CurrencyConversion\\CurrencyConvertor.Logic\\CurrencyConvertor.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
