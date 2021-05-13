@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CurrencyConvertor.Logic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -14,7 +15,9 @@ namespace CurrencyConversion
 
             Dictionary<string, decimal> dictionary;
 
-            var prices = await File.ReadAllTextAsync("Prices.csv");
+            var prices = await File.ReadAllTextAsync("Prices.csv"); Dictionary<string, decimal> dictionary;
+
+            List<Product> productPrice;
         }
     }
 }

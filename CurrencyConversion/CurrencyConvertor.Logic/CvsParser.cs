@@ -8,7 +8,6 @@ namespace CurrencyConvertor.Logic
     {
         public List<string[]> Parse(string text)
         {
-            List<string> info;
             var lines = text.Replace("/r", string.Empty)
                 .Split('\n');
             var result = new List<string[]>();
